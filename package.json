@@ -1,0 +1,29 @@
+{
+  "name": "shinden-api",
+  "version": "0.1.0",
+  "description": "Unofficial shinden api",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lint-fix": "eslint  --fix --ext .js --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xdk78 <xdk78@interia.pl>",
+  "license": "MIT",
+  "dependencies": {
+    "@3846masa/axios-cookiejar-support": "^0.1.4",
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4",
+    "nightmare": "^2.10.0",
+    "tough-cookie": "^2.3.3",
+    "x-ray": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
