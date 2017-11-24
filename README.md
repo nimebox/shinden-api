@@ -2,7 +2,7 @@
 Unofficial api for
 https://shinden.pl
 
-## Install animesub-api
+## Install shinden-api
     npm install shinden-api --save
     
 ## Usage
