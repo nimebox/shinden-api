@@ -107,7 +107,7 @@ shinden.players(url)
        source: 'http://www.animezone.pl/odcinki-online/naruto/220' } },
 ```
 
-### Video url scraped from player
+### [W.I.P] Video url scraped from player
 
 ```javascript
 const shinden = require('shinden-api')

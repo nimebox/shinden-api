@@ -134,7 +134,7 @@ const players = async (url) => {
 
 const video = async (url, onlineId) => {
   const response = await headless(url, onlineId)
-  return response.click[1]
+  return response.click[2]
 }
 
 module.exports = {
