@@ -1,3 +1,5 @@
+jest.setTimeout(100000)
+
 const shinden = require('../src/index.js')
 const url = 'https://shinden.pl/series/11-naruto'
 
