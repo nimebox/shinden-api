@@ -23,7 +23,6 @@ const search = async title => {
         if (err) {
           reject(err)
         }
-        console.log(obj.json)
         const out = obj.url.map((el, i) => ({
           url: BASE_URL + obj.url[i]
         }))
