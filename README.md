@@ -21,34 +21,16 @@ shinden.search(title).then((out) => {
 ```
 #### output
 ```js
-[ { url: 'https://shinden.pl/series/11-naruto',
-    json:
-     { ranking_rate: '8.592966079871475',
-       rating_titlecahracters: 8.791644349223352,
-       kind: 'TV',
-       rating_total_cnt: 3930,
-       title_id: '11',
-       title: 'Naruto',
-       type: 'Anime',
-       episode_time: 23,
-       rating_total: 8.583206106870229,
-       rating_titlecahracters_cnt: 3734,
-       rating_music: 8.531812080536913,
-       rating_graphics_cnt: 3728,
-       rating_story: 8.695512820512821,
-       genres: [Array],
-       obj: 'anime',
-       rating_music_cnt: 3725,
-       online: '875',
-       rating_story_cnt: 3744,
-       ranking_position: 86,
-       rating_graphics: 7.9959763948497855,
-       cover_artifact_id: 171942,
-       episodes: 220,
-       title_status: 'Finished Airing',
-       _highlight: [Object],
-       hl_title: '<em>Naruto</em>' } }
-]
+[ [ { url: 'https://shinden.pl/series/11-naruto' },
+  { url: 'https://shinden.pl/series/44471-boruto-naruto-the-movie' },
+  { url: 'https://shinden.pl/series/49778-boruto-naruto-next-generations' },
+  { url: 'https://shinden.pl/series/12055-naruto-shippuuden-movie-5-blood-prison' },
+  { url: 'https://shinden.pl/series/9452-naruto-the-cross-roads' },
+  { url: 'https://shinden.pl/manga/540-naruto' },
+  { url: 'https://shinden.pl/manga/10548-naruto-pilot' },
+  { url: 'https://shinden.pl/manga/46059-boruto-naruto-next-generations' },
+  { url: 'https://shinden.pl/manga/49976-naruto-hiden' },
+  { url: 'https://shinden.pl/manga/10214-naruto-shiro-no-douji-keppu-no-kijin' } ]
 ```
 
 ### Anime info

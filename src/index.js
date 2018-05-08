@@ -18,16 +18,14 @@ const search = async title => {
     const response = await api.get(SEARCH_URL + title)
     return new Promise((resolve, reject) => {
       x(response.data, {
-        url: ['td[class=desc-col] > h3 > a@href'],
-        json: ['tr@data']
+        url: ['li[class="desc-col"] > h3 > a@href']
       })((err, obj) => {
         if (err) {
           reject(err)
         }
-
-        const out = _.compact(obj.json).map((el, i) => ({
-          url: BASE_URL + obj.url[i],
-          json: JSON.parse(el)
+        console.log(obj.json)
+        const out = obj.url.map((el, i) => ({
+          url: BASE_URL + obj.url[i]
         }))
         resolve(out)
       })
