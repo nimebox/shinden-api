@@ -1,4 +1,4 @@
-jest.setTimeout(30000)
+jest.setTimeout(60000)
 
 const shinden = require('../src/index.js')
 const url = 'https://shinden.pl/external-video/11-naruto/view/670'

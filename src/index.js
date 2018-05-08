@@ -2,6 +2,8 @@ const x = require('x-ray')()
 const axios = require('axios')
 const _ = require('lodash')
 const Nightmare = require('nightmare')
+const axiosCloudflare = require('axios-cloudflare')
+axiosCloudflare(axios)
 
 const api = axios.create({
   withCredentials: true
