@@ -5,9 +5,6 @@ const Nightmare = require('nightmare')
 const axiosCloudflare = require('axios-cloudflare')
 axiosCloudflare(axios)
 
-const api = axios.create({
-  withCredentials: true
-})
 const BASE_URL = 'https://shinden.pl'
 const SEARCH_URL = 'https://shinden.pl/search?&q='
 
@@ -17,7 +14,7 @@ const nightmare = Nightmare({
 
 const search = async title => {
   try {
-    const response = await api.get(SEARCH_URL + title)
+    const response = await axios.get(SEARCH_URL + title)
     return new Promise((resolve, reject) => {
       x(response.data, {
         url: ['li[class="desc-col"] > h3 > a@href']
@@ -38,7 +35,7 @@ const search = async title => {
 
 const anime = async url => {
   try {
-    const response = await api.get(url + '/all-episodes')
+    const response = await axios.get(url + '/all-episodes')
     return new Promise((resolve, reject) => {
       x(response.data, {
         url: ['tbody[class=list-episode-checkboxes] > tr > td[class=button-group] > a@href'],
