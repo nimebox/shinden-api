@@ -1,4 +1,4 @@
-# shinden-api
+# shinden-api [![Build Status](https://travis-ci.org/Nimebox/shinden-api.svg?branch=master)](https://travis-ci.org/Nimebox/shinden-api)
 Unofficial api for
 https://shinden.pl
 
